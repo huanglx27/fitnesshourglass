@@ -6,10 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment
+    <!--<fragment
         android:id="@+id/part_timing"
         android:name="com.fitnesshourglass.android.Timing.TimingFragment"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <fragment
+        android:id="@+id/part_countdown"
+        android:name="com.fitnesshourglass.android.CountDown.CountDownFrament"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <include layout="@layout/part_bottom" />
 
 </FrameLayout>
