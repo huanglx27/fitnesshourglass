@@ -2,6 +2,9 @@ package com.fitnesshourglass.android.CountDown;
 
 import android.os.Message;
 
+/**
+ *在Andorid SDK中CountdownTimer的基础上修改
+*/
 public abstract class MyCountdownTimer {
 
     private final long mCountdownInterval;
@@ -23,10 +26,13 @@ public abstract class MyCountdownTimer {
         mCountdownInterval = countdownInterval;
     }
 
+    public long getmRemainTime() {
+        return mRemainTime;
+    }
+
     public final void restart(){
         synchronized (MyCountdownTimer.this){
             mRemainTime = mTotalTime;
-            onRestart();
         }
     }
 
@@ -57,8 +63,6 @@ public abstract class MyCountdownTimer {
     public abstract void onTick(long millisUntilFinished,int percent);
 
     public abstract void onFinish();
-
-    public abstract void onRestart();
 
     private android.os.Handler handler = new android.os.Handler(){
         @Override

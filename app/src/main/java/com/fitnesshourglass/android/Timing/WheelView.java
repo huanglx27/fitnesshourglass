@@ -33,6 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * WheelView来源于GitHub的开源项目
  * Created on 2017/10/31 下午8:35.
  * leo linxiaotao1993@vip.qq.com
  */

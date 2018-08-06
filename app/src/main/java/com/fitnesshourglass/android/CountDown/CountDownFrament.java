@@ -24,7 +24,7 @@ public class CountDownFrament extends Fragment {
 
     private Timer timer;
 
-    class Timer extends MyCountdownTimer{
+    private class Timer extends MyCountdownTimer{
 
         private long mMillisInFuture;
 
@@ -32,6 +32,7 @@ public class CountDownFrament extends Fragment {
             super(millisInFuture, countdownInterval);
             mMillisInFuture =millisInFuture;
         }
+
 
         @Override
         public void onTick(long millisUntilFinished, int percent) {
@@ -41,11 +42,6 @@ public class CountDownFrament extends Fragment {
         @Override
         public void onFinish() {
             timeNowTextView.setText("结束");
-        }
-
-        @Override
-        public void onRestart() {
-            timeNowTextView.setText(mMillisInFuture/1000 + "秒");
         }
     }
 

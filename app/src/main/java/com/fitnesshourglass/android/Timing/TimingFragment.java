@@ -20,6 +20,10 @@ import java.util.List;
 
 public class TimingFragment extends Fragment {
 
+/*
+    设定时间的碎片
+*/
+
     private WheelView wheelView_min;
 
     private WheelView wheelView_second;
