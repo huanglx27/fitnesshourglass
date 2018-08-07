@@ -1,4 +1,8 @@
 # fitnesshourglass 健身沙漏
+
+<font color=gray size=5>doInBackgroung中没用handler，但是提示Can't create handler inside thread Thread[AsyncTask #1,5,main] that has not called Looper.prepare()。无法解决，打算弃坑重新写</font>
+
+
 ## 前言
 六月份看完《JAVA核心技术I》，打算用Android来加深对JAVA的理解。七月份看完《第一行代码》，打算实战来巩固和提升。
 ## 需求
