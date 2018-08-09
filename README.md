@@ -1,5 +1,5 @@
 # fitnesshourglass 健身沙漏
-
+` **8.9更新** 问题解决，在CountdownTimer中使用handler来实现start()等方法，doInBackground没Looper.prepare()会报错。目前已经开始写无AsyncTask版本的fitnesshourglass，因此这个坑不填了，另开一坑`
 `doInBackgroung中没用handler，但是提示Can't create handler inside thread Thread[AsyncTask #1,5,main] that has not called Looper.prepare()。无法解决，打算弃坑重新写`
 
 ## 前言
